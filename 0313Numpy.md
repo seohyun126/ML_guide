@@ -1,3 +1,58 @@
+# Numpy 개념 필사
+
+## 머신러닝
+    머신러닝: 애플리케이션을 수정하지 않고도 데이터를 기반을 패턴을 학습하고 결과를 예측하는 알고리즘 기법
+    머신러닝=지도학습+비지도학습
+## Numpy
+    numpy의 기반 데이터 타입: ndarray
+    ndarray의 데이터값은 문자열,숫자,bool 모두 가능, 하지만 ndarray내 데이터 타입은 같은 데이터 타입만 가능
+    (리스트와 다르게)
+    만약 서로 다른 데이터 유형이 섞여있다면 더 큰 데이터 타입으로 형 변환을 일괄 적용함
+- type(array): class'numpy.ndarray'
+- array.shape: (row,col) #행과 열의 수를 튜플 형태로 가지고 있어 ndarray 배열의 차원을 알 수 있음
+(n,): 1차원, (n,m): 2차원
+- array.ndim:리스트[]=1차원, 리스트[[]]=2차원
+- np.arange(n):0~(n-1) 까지의 값을 순차적으로 ndarray의 데이터값으로 변환시켜줌, start=a,stop=b값 추가 가능
+- np.zeros((n,p),dtype='int32'): 모든 값을 0으로 채움
+- np.ones((n,p)): 모든 값을 1로 채움, 디폴트 값은 float64
+- array.reshape(n,p): 차원과 크기 변환시켜줌, -1을 인자로 사용하면 나머지 값에 맞춰 자동배정
+- array.tolist(): 리스트 자료형태로 print
+- array[0,3]: row=0,col=3인 값 추출하기
+- array[:4,3:4]:row=0,1,2,3, col=3인 array 추출하기
+- array[0]: 첫번째 row의 값들 추출하기,리스트형태
+- array[3]: 네번째 row의 값들 추출하기,리스트형태
+- array[[0,1],3]:네번째 col의 첫번째, 두번째 값 리스트로 리턴하기
+- array[조건]: 조건이 true가 되는 값이 리턴됨
+- np.sort(array): 이때 원본 행렬을 sort된 행렬이 반환됨, 원본행렬을 변하지 않음
+- array.sort(): 이때 반환되는 값 없음, 원본행렬이 sort된 행렬로 대체됨
+- np.sort(array)[::-1]: 내림차순으로 정렬하기
+- np.sort(array,axis=0): row를 오름차순으로 정리해줌
+- np.sort(array,axis=1): column을 오름차순으로 정리해줌
+- np.argsort(array): 원본행렬 정렬시 index값을 리턴
+- np.dot(A,B): A,B 행렬의 내적 결과 알려줌
+- np.transpose(A): A행렬의 전치행렬
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
 ```python
 import numpy as np
 ```
