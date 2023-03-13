@@ -34,26 +34,6 @@
 
 
 ```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
 import numpy as np
 ```
 
